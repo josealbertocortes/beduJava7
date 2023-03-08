@@ -21,3 +21,20 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# git ignore update
+git rm -r --cached .
+
+#ignore for each sesion
+postwork1/bin/*
+postwork1/build/*
+
+postwork2/bin/*
+postwork2/build/*
+
+postwork3/bin/*
+postwork3/build/*
+
+postwork4/bin/*
+postwork4/build/*
+
