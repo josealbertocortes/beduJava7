@@ -7,12 +7,13 @@ import java.util.regex.Pattern;
 @Service
 public class ValidadorTelefono {
 
-    private static final Pattern patronTel = Pattern.compile("^(\\d{2,4}[- .]?){2}\\d{4}$");
-    public boolean esValido(String tel) {
-        return patronTel.matcher(tel).matches();
+    private static final Pattern PATTERN_TELEFONO = Pattern.compile("^(\\d{2,4}[- .]?){2}\\d{4}$");
+
+    public boolean isValido(String telefono) {
+        return PATTERN_TELEFONO.matcher(telefono).matches();
     }
 
-    public String limpiarTelefono(String tel) {
-        return tel.replaceAll("[^0-9]","");
+    public String limpiaNumero(String telefono){
+        return telefono.replaceAll("[^0-9]", "");
     }
 }

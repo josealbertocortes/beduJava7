@@ -32,8 +32,8 @@ public class PostworkApplication implements CommandLineRunner {
 		System.out.println("El telefono de " + nombre + " es: ");
 		String tel = lector.nextLine();
 
-		if(validadorTelefono.esValido(tel)) {
-			tel = validadorTelefono.limpiarTelefono(tel);
+		if(validadorTelefono.isValido(tel)) {
+			tel = validadorTelefono.limpiaNumero(tel);
 			tel = formateadorTelefono.formatear(tel);
 
 			Persona persona = new Persona(nombre,tel);
