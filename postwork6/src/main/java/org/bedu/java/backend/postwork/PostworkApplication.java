@@ -11,7 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import java.util.Scanner;
 
 @SpringBootApplication
-public class PostworkApplication implements CommandLineRunner {
+public class PostworkApplication /*implements CommandLineRunner*/ {
 
 	private final ValidadorTelefono validadorTelefono;
 	private final FormateadorTelefono formateadorTelefono;
@@ -21,7 +21,7 @@ public class PostworkApplication implements CommandLineRunner {
 		this.validadorTelefono = validadorTelefono;
 		this.formateadorTelefono = formateadorTelefono;
 	}
-
+/*
 	@Override
 	public void run(String... args) throws Exception {
 		//Scanner lector = new Scanner(System.in);
@@ -41,8 +41,8 @@ public class PostworkApplication implements CommandLineRunner {
 		}
 		else {
 			System.out.println("ERROR, por favor introduce un numero de telefono valido");
-		}*/
-	}
+		}
+	}*/
 
 	public static void main(String[] args) {
 		SpringApplication.run(PostworkApplication.class, args);
