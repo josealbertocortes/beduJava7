@@ -24,15 +24,15 @@ public class PostworkApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		Scanner lector = new Scanner(System.in);
+		//Scanner lector = new Scanner(System.in);
 
-		System.out.println("Introduce un nombre: ");
-		String nombre = lector.nextLine();
+		//System.out.println("Introduce un nombre: ");
+		//String nombre = lector.nextLine();
 
-		System.out.println("El telefono de " + nombre + " es: ");
-		String tel = lector.nextLine();
+		//System.out.println("El telefono de " + nombre + " es: ");
+		//String tel = lector.nextLine();
 
-		if(validadorTelefono.isValido(tel)) {
+		/*if(validadorTelefono.isValido(tel)) {
 			tel = validadorTelefono.limpiaNumero(tel);
 			tel = formateadorTelefono.formatear(tel);
 
@@ -41,7 +41,7 @@ public class PostworkApplication implements CommandLineRunner {
 		}
 		else {
 			System.out.println("ERROR, por favor introduce un numero de telefono valido");
-		}
+		}*/
 	}
 
 	public static void main(String[] args) {
