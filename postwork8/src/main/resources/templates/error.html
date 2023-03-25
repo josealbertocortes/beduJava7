@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th= "http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${message}"></title>
+</head>
+<body>
+<table>
+    <tr><td>ERROR MESSAGE</td><td th:text="${message}"></td></tr>
+    <tr><td>STATUS CODE</td><td th:text="${status}"></td></tr>
+    <tr><td>EXCEPTION</td><td th:text="${exception}"></td></tr>
+    <tr><td>STACKTRACE</td><td th:text="${trace}"></td></tr>
+    <tr><td>BINDING ERRORS</td><td th:text="${errors}"></td></tr>
+</table>
+</body>
+</html>
