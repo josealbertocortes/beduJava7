@@ -1,9 +1,7 @@
 package org.bedu.java.backend.postwork.model;
-
-import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Pattern;
-
+import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Pattern;
 import java.util.Objects;
 
 @Entity
@@ -52,8 +50,7 @@ public class Persona implements Comparable<Persona>{
                 ", telefono='" + telefono + '\'' +
                 '}';
     }
-    @Override
-    public boolean equals(Object o) {
+    @Override    public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Persona persona = (Persona) o;
@@ -69,4 +66,5 @@ public class Persona implements Comparable<Persona>{
     public int compareTo(Persona o) {
         return this.nombre.compareTo(o.nombre);
     }
+
 }
