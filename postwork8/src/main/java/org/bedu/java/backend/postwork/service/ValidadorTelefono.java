@@ -7,4 +7,5 @@ public class ValidadorTelefono {
     public String limpiaNumero(String telefono) {
         return telefono.replaceAll("[^0-9]","");
     }
+	
 }

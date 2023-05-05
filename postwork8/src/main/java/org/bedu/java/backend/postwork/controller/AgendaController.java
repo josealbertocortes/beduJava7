@@ -15,7 +15,7 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.validation.Valid;
 
 @Controller
-//@RequestMapping("/api/v1")
+@RequestMapping("/api/v1")
 public class AgendaController {
     private final AgendaService agendaService;
 

@@ -10,4 +10,5 @@ public class FormateadorTelefono {
     public String formatea(String telefono) {
         return String.valueOf(telefono).replaceFirst(FORMATO_INICIAL_TELEFONO,FORMATO_FINAL_TELEFONO);
     }
+	
 }

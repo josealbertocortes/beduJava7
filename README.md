@@ -3,8 +3,6 @@ Repositorio para el curso de java. Somos el equipo 7
 
 # Miembros
 
-Alejandro Parra Jimenez
-
 Mario Garza
 
 Luis Martinez
@@ -12,8 +10,6 @@ Luis Martinez
 Alberto Cortes 
 
 Jorge Luis Ortiz Martinez
-
-Emmanuel Guadalupe Robles Robles
 
 # run
 postwork[N]/gradle run

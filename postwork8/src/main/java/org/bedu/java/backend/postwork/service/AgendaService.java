@@ -30,8 +30,6 @@ public class AgendaService {
 
     public List<Persona> getPersonas() {
 
-        //List<Persona> lista = personaRepository.findAll(Sort.by("nombre"));
-
         return personaRepository.findAll(Sort.by("nombre"));
     }
 }
